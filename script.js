@@ -9,15 +9,15 @@ class Symbol {
         /* this.characters = `αβγδεζηθικλμνξοπρστυφχψω`; Greek lowercase alphabet */
         /* this.characters = `ﾊﾐﾋｰｳｼﾅﾓﾆｻﾜﾂｵﾘｱﾎﾃﾏｹﾒｴｶｷﾑﾕﾗｾﾈｽﾀﾇﾍｦｲｸｺｿﾁﾄﾉﾌﾔﾖﾙﾚﾛﾝ`; Katakana alphabet */
         /* this.characters = `01`; Binary alphabet */
-        /* this.characters = `日ｦｱｳｴｵｶｷｹｺｻｼｽｾｿﾀﾂﾃﾅﾆﾇﾈﾊﾋﾎﾏﾐﾑﾒﾓﾔﾕﾗﾘﾜTHEMATRIXBCDFGHJKLMRNOPQXYWZ00000011111123456789:;.,#@"'=*+-<>{}/&$¦｜_λ? \` \\ :;.,#@"'=*+-<>{}/&$¦｜_λ? \` \\                                                                       `; The Matrix alphabet */
-        this.characters = `日ｦｱｳｴｵｶｷｹｺｻｼｽｾｿﾀﾂﾃﾅﾆﾇﾈﾊﾋﾎﾏﾐﾑﾒﾓﾔﾕﾗﾘﾜTHEMATRIXBCDFGHJKLMRNOPQXYWZ00000011111123456789:;.,#@"'=*+-<>{}/&$¦｜_λ? \` \\ :;.,#@"'=*+-<>{}/&$¦｜_λ? \` \\                                                                       `;
+        /* this.characters = `日ｦｱｳｴｵｶｷｹｺｻｼｽｾｿﾀﾂﾃﾅﾆﾇﾈﾊﾋﾎﾏﾐﾑﾒﾓﾔﾕﾗﾘﾜTHEMATRIXBCDFGHJKLMRNOPQXYWZ00000011111123456789:;.,#@"'=*+-<>{}/&$¦｜_λ? \` \\ :;.,#@"'=*+-<>{}/&$¦｜_λ? \` \\                                                                       `; Latin uppercase + Katakana + Binary alphabet */
+        this.characters = `日ｦｱｳｴｵｶｷｹｺｻｼｽｾｿﾀﾂﾃﾅﾆﾇﾈﾊﾋﾎﾏﾐﾑﾒﾓﾔﾕﾗﾘﾜTHEMATRIX00000011111123456789:;.,#@"'=*+-<>{}/&$¦｜_λ? \` \\ :;.,#@"'=*+-<>{}/&$¦｜_λ? \` \\                                                                       `; /* The Matrix alphabet */
         this.x = x;
         this.y = y;
         this.fontSize = fontSize;
         this.text = ' ';
         this.canvasHeight = canvasHeight;
-
     }
+    
     draw(context){
         this.text = this.characters.charAt(Math.floor(Math.random() * this.characters.length));
         context.fillStyle = '#0aff0a';
